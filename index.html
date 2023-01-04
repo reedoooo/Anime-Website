@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+    <title>Anime Tracker</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: auto;
+            padding: 50;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            color: #ccc;
+        }
+        body {
+            background-color: #F8C8DC;
+        }
+        .column2 ul li {
+            font-style: italic;
+        }
+        .container{
+            height: 300px;
+            width: 1500;
+        }
+        .hero-photo{
+            hieght: 400;
+            width: 50%;
+            display: flex;
+            flex: 50%;
+            padding: 5px;
+            flex-wrap: wrap;
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+            align-content: center;
+        }
+        .photo-column{
+          
+        }	
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 33.33%;
+            padding: 5px;
+        }
+        .row2 {
+            display: flex;
+        }
+        .column2 {
+            flex: 50%;
+            padding: 5px;
+            border: 3px;
+            border-style: solid;
+            border-color:#333;
+            font-size: 12;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        let userPrompt = confirm("Is it alright if I ask you something?");
+        let favoriteAnime = prompt("What's your favorite anime?");
+
+        if (favoriteAnime === "Naruto") {
+            console.log("Welcome!");
+        } else {
+            console.log(`I love ${favoriteAnime}! Welcome to the website!`);
+        }
+
+
+        if (userPrompt) {
+            console.log("Great!");
+        } else {
+            console.log("You suck");
+        }
+    </script>
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="https://reedoooo.github.io/reading-notes/102-Notes/Top-Anime.html">Top Anime</a></li>
+
+            <li><a href="https://reedoooo.github.io/reading-notes/102-Notes/Worst-Anime.html">Worst Anime</a></li>
+
+            <li><a href="https://reedoooo.github.io/reading-notes/102-Notes/Anticipated-Anime.html">Highly Anticipated Anime</a></li>
+        </ul>
+</nav><hr>
+    <h1>My Anime Tracker</h1><hr>
+</header>
+
+<main>
+        <div class="container">
+            <section class ="hero-photo">
+                <img src="https://www.wallpaperup.com/uploads/wallpapers/2016/01/09/871942/59d862e761b3dd2ebe5ff960d96a5cc9-700.jpg" alt="HxH Character Wall" style="width:100%">
+            </section>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="https://prod.assets.earlygamecdn.com/images/Solo-Leveling.png" alt="Photo of main character holding weapon" style="width:100%">
+                <p>Highly Anticipated Anime: Solo Leveling</p>
+            </div>
+            <div class="column">
+                <img src="https://9tailedkitsune.com/wp-content/uploads/2022/01/Food-Wars-Shokugeki-no-Soma.jpg" alt="Photo of main food wars character" style="width:100%">
+                <p>Worst Anime: Food Wars</p>
+            </div>
+            <div class="column">
+                <img src="https://p4.wallpaperbetter.com/wallpaper/257/777/256/naruto-shippuuden-uzumaki-naruto-uchiha-sasuke-kurama-wallpaper-preview.jpg" alt="Sasuke and Naruto six paths modes" style="width:100%">
+                <p>Top Anime: Naruto</p>
+            </div>
+        </div>
+    <div class="row2">
+    <section class ="column2">
+        <center><p>Anime I've Watched</p></center>
+        <ul>
+            <li>Naruto</li>
+            <li>Hunter X Hunter</li>
+            <li>Seven Deadly Sins</li>
+            <li>Death Note</li>
+            <li>Bleach</li>
+        </ul>
+    </section>
+    <section class ="column2">
+        <center><p>Anime to Watch</p></center>
+        <ul>
+            <li>Attack on Titan</li>
+            <li>Cowboy Bebop</li>
+            <li>Lycorois Recoil</li>
+            <li>Fire Force</li>
+            <li>Avatar</li>
+        </ul>
+    </section>
+    </div>
+    <hr>
+</main>
+
+<footer>
+    <center><b><p>&#169 Reed Vogt - Class 102</p></b></center>
+    <cite></cite>
+    <cite></cite>
+    <cite></cite>
+</footer>
+
+</html>
