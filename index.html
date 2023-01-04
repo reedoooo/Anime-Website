@@ -4,20 +4,20 @@
     <link rel="stylesheet" href="Anime-Website.css">
 
     <script>
-        let userPrompt = confirm("Is it alright if I ask you something?");
-        let favoriteAnime = prompt("What's your favorite anime?");
+        let userPrompt = confirm("Is it alright if I ask you something?"); //creates variable userPrompt and sets value to a confirmation form yes or no
+        let favoriteAnime = prompt("What's your favorite anime?"); //create variable and sets value to a confirmation form, answer contingent
 
-        if (favoriteAnime === "Naruto") {
-            console.log("Welcome!");
-        } else {
-            console.log(`I love ${favoriteAnime}! Welcome to the website!`);
+        if (favoriteAnime === "Naruto") { //conditional if the answer to the prompt is Naruto
+            console.log("Welcome!"); //have the console log display welcome
+        } else { //conditional pt 2 
+            console.log(`I love ${favoriteAnime}! Welcome to the website!`); // otherwise display I love (answer from form submission). welcome to website
+            document.getElementById('animeID').innerHTML = "<p>" +  favoriteAnime + "</p>";
         }
 
-
-        if (userPrompt) {
-            console.log("Great!");
-        } else {
-            console.log("You suck");
+        if (userPrompt) { //conditional if the user presses yes
+            console.log("Great!");  //display great on console
+        } else { //conditional pt 2
+            console.log("You suck"); //otherwise display you suck on console
         }
     </script>
 </head>
@@ -76,6 +76,17 @@
             <li>Avatar</li>
         </ul>
     </section>
+    </div>
+    <div class="row2">
+        <section class ="column2">
+            <center><p>Your Favorite Anime</p></center>
+            <ul>
+                <div>
+                <p id="animeID"></p>
+                <li></li>
+                </div>
+            </ul>
+        </section>
     </div>
     <hr>
 </main>
