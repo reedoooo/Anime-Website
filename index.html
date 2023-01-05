@@ -2,30 +2,8 @@
 <head>
     <title>Anime Tracker</title>
     <link rel="stylesheet" href="Anime-Website.css">
-
-    <script>
-        let userPrompt = confirm("Is it alright if I ask you something?"); //creates variable userPrompt and sets value to a confirmation form yes or no
-        let favoriteAnime = prompt("What's your favorite anime?"); //create variable and sets value to a confirmation form, answer contingent
-        
-        if (userPrompt) { //conditional if the user presses yes
-            console.log("Great!");  //display great on console
-        } else { //conditional pt 2
-            console.log("You suck"); //otherwise display you suck on console
-        }
-
-
-
-if (favoriteAnime === "Naruto") { //conditional if the answer to the prompt is Naruto
-        console.log("Welcome!"); //have the console log display welcome
-    } else {
-        console.log(`I love ${favoriteAnime}! Welcome to the website!`); // otherwise display I love (answer from form submission). welcome to website
-        document.write(favoriteAnime);
-    }
-
-
-    </script>
+    <script type="text/javascript" src="index.js"></script>
 </head>
-
 <header>
     <nav>
         <ul>
@@ -85,14 +63,15 @@ if (favoriteAnime === "Naruto") { //conditional if the answer to the prompt is N
         <section class ="column2">
             <center><p>Your Favorite Anime</p></center>
             <ul>
-                <div>
-                <p></p>
-                <li script="document.write(favoriteAnime);"></li>
-                </div>
+                <il></il><div id="dope"></div>
             </ul>
         </section>
+        <script>
+            callFunction();
+        </script>
     </div>
     <hr>
+    <input type="text" id="cool"/>
 </main>
 
 <footer>
@@ -101,5 +80,4 @@ if (favoriteAnime === "Naruto") { //conditional if the answer to the prompt is N
     <cite></cite>
     <cite></cite>
 </footer>
-
 </html>
