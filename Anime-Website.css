@@ -29,6 +29,24 @@
         body {
             background-color: #F8C8DC;
         }
+        #anime-div
+        {
+            position: relative;
+            height: 90px;
+            width: 140px;
+            overflow:visible;
+            margin-bottom: 20px;
+            border: 1px solid #111;
+        }
+        #anime-div img {
+                display: block;
+                max-height: 90px;
+                max-width: 140px;
+                height: auto;
+                width: auto;
+              
+        }
+
         .lower-box {
             align-self: center;
             align-items: center;

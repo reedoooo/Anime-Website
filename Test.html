@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+nav {
+  background-color: darkgrey;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-size: 24px;
+  height: 48px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100%;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+  line-height: 48px;
+  position: relative;
+}
+
+.button {
+  display: block;
+  color: lightgrey;
+  text-decoration: none;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-shadow: 1px 1px 0px black;
+}
+
+.button:hover {
+  color: #F8C8DC;
+  background-color: lightgrey;
+}
+
+nav li:nth-child(1) .button {
+  border: 2px solid #F8C8DC;
+}
+
+nav li:nth-child(2) .button {
+  border: 2px solid #F8C8DC;
+}
+
+nav li:nth-child(3) .button {
+  border: 2px solid #F8C8DC;
+}
+
+
+        </style>
+        <script>
+            function showAnimeImage() {
+    // create an image element and set its src attribute to the URL of an anime image
+    var imgElement = document.createElement("img");
+    imgElement.src = "https://images6.alphacoders.com/415/thumb-1920-415519.jpg";
+  
+    // append the image to the body of the page
+    document.body.appendChild(imgElement);
+  }
+  
+  function promptAndShowAnimeImages() {
+    var numImages = prompt("How many anime characters do you want to see?");
+  
+    // use a loop to show the image that many times
+    for (var i = 0; i < numImages; i++) {
+      showAnimeImage();
+    }
+  }
+  
+  // call the function to show the images
+  promptAndShowAnimeImages();
+        </script>
+    </head>
+    <header>
+        <nav>
+            <ul>
+              <li><a class="button" href="#">Top Anime</a></li>
+              <li><a class="button" href="#">Worst Anime</a></li>
+              <li><a class="button" href="#">Highly Anticipated Anime</a></li>
+            </ul>
+          </nav>
+    </header>
+    <body>
+        
+    </body>
+</html>
+Below is a collection of resources of varying types and lengths which describe the topics for the upcoming lecture.
+
+Go through these resources, and create a page in your reading-notes repo that summarizes the topics you learned as though you were presenting the material to a non-technical friend interested in learning about it.
+
+
+Note entry ideas:
+
+Blog Article (2-3 paragraphs with code sample)
+Dictionary / Flash Cards
+Notes in outline form
+Fill-in-the-blank worksheet of key concepts
+
+For link one Focus only on Comparison operators and Assignment operators.
+For link two Focus only on for statement and while statement loops.
+
+Link 1: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
+Link 2: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
+
+
+In programming, expressions and operators are used to perform certain operations on values or variables. Comparison operators allow you to compare two values and determine if they are equal, greater than, or less than each other. For example, the operator "==" checks if two values are equal, while ">" checks if one value is greater than the other.
+
+On the other hand, assignment operators are used to assign a value to a variable. The most basic assignment operator is the equal sign ("="), which assigns the value on the right to the variable on the left. Other assignment operators include "+=", which adds the right value to the left variable and assigns the result to the left variable, and "-=", which subtracts the right value from the left variable and assigns the result to the left variable.
+
+Loops are a way to repeat a block of code multiple times. There are two types of loops: for statement loops and while statement loops.
+
+For statement loops are used when you want to repeat a block of code a specific number of times. The syntax for a for loop is:
+
+for (initialization; condition; increment) {
+code block to be executed
+}
+
+The initialization is executed before the loop starts, the condition is checked at the beginning of each iteration, and the increment is executed at the end of each iteration. If the condition is true, the code block is executed. If the condition is false, the loop ends.
+
+While statement loops are used when you want to repeat a block of code an unknown number of times. The syntax for a while loop is:
+
+while (condition) {
+code block to be executed
+}
+
+The condition is checked at the beginning of each iteration. If the condition is true, the code block is executed. If the condition is false, the loop ends.
+
+Dictionary / Flash Cards:
+
+Comparison operators: operators used to compare two values and determine if they are equal, greater than, or less than each other
+Assignment operators: operators used to assign a value to a variable
+For statement loops: loops that repeat a block of code a specific number of times
+While statement loops: loops that repeat a block of code an unknown number of times
+Notes in outline form:
+
+Expressions and operators
+Comparison operators
+Equal to: "=="
+Greater than: ">"
+Less than: "<"
+Assignment operators
+Basic assignment: "="
+Add and assign: "+="
+Subtract and assign: "-="
+Loops
+For statement loops
+Syntax: for (initialization; condition; increment) { code block }
+While statement loops
+Syntax: while (condition) { code block }
+Fill-in-the-blank worksheet:
+
+Comparison operators are used to _______ two values and determine if they are equal, greater than, or less than each other.
+Assignment operators are used to _______ a value to a variable.
+The most basic assignment operator is the _______ sign.
+For statement loops repeat a block of code a _______ number of times.
+While statement loops repeat a block of code an _______ number of times.
+Answers:
+
+compare
+assign
+equal
+specific
+unknown
+
+that code is perfect, but make it so that upon hovering, each button also becomes a slightly lighter shade of grey. Also make the color around each button the same color as the font.
