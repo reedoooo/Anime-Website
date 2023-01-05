@@ -2,7 +2,7 @@
     
     let userPrompt = confirm("Is it alright if I ask you something?"); //creates variable userPrompt and sets value to a confirmation form yes or no
     let favoriteAnime = prompt("What's your favorite anime?"); //create variable and sets value to a confirmation form, answer contingent
-    
+
     if (userPrompt) { //conditional if the user presses yes
         console.log("Great!");  //display great on console
     } else { //conditional pt 2
@@ -20,13 +20,12 @@
             document.getElementById("dope").innerHTML = favoriteAnime;
         }
     }
-    function myFunction() {
-        var x = document.getElementById("frm1");
-        var text = "";
-        var i;
-        for (i = 0; i < x.length ;i++) {
-          text += x.elements[i].value + "<br>";
-        }
-        document.getElementById("demo").innerHTML = text;
+    
+    extractInfo = function() {
+        // Get the value of the input element
+        var inputValue = document.getElementById("input-element").value;
+  
+        // Set the innerHTML of the output div to the value of the input element
+        document.getElementById("output-div").innerHTML = inputValue;
       }
 
