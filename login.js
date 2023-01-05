@@ -28,6 +28,8 @@ function myFunction() {
     for (var i = 0; i < numImages; i++) {
       showAnimeImage(divElement);
     }
+
+    document.write(numImages + " anime images wow!");
   }
   
   // call the function to show the images
