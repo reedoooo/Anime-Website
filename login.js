@@ -1,3 +1,15 @@
+
+function redirectOnConfirm() {
+  if (confirm("Is it alright if I ask you something?")) {
+    window.location.href = "https://reedoooo.github.io/Anime-Website/index.html"
+    // do nothing, user clicked "OK"
+  } else {
+    // user clicked "Cancel", redirect to new page
+    window.location.href = "https://reedoooo.github.io/Anime-Website/login.html";
+  }
+}
+
+
 function myFunction() {
   // retreive the form element, create empty text string variable, concatenates value to string 'text'
     var x = document.getElementById("form");
